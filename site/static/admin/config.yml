@@ -86,9 +86,12 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     filter: {field: "type", value: "simple-promo"}
     fields: # The fields each document in this collection have
-      - {label: "Type", name: "type", widget: "select", options:
-        - {label: "Simple Promo", value: "simple-promo"}
-        - {label: "Larger Promo", value: "larger-promo"}
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - {label: "Simple Promo", value: "simple-promo"}
+          - {label: "Larger Promo", value: "larger-promo"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -100,9 +103,12 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     filter: {field: "type", value: "larger-promo"}
     fields: # The fields each document in this collection have
-      - {label: "Type", name: "type", widget: "select", options:
-        - {label: "Simple Promo", value: "simple-promo"}
-        - {label: "Larger Promo", value: "larger-promo"}
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - {label: "Simple Promo", value: "simple-promo"}
+          - {label: "Larger Promo", value: "larger-promo"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
