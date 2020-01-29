@@ -97,7 +97,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Header Image", name: "image", widget: "image", required: false}
-  - name: "landing-page" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "landing-page-larger-promo" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Larger Promo Landing Page" # Used in the UI, ie.: "New Post"
     folder: "site/content/landing-page" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
