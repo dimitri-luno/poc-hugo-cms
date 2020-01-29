@@ -82,22 +82,39 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Image, name: imageUrl, widget: image}
   - name: "landing-page-simple-promo" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Simple Promo Landing Page" # Used in the UI, ie.: "New Post"
-    folder: "site/content/landing-page" # The path to the folder where the documents are stored
+    folder: "site/content/landing-pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    identifier_field: slug
     fields: # The fields each document in this collection have
+      - {label: "Slug", name: "slug", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Header Image", name: "image", widget: "image", required: false}
   - name: "landing-page-larger-promo" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Larger Promo Landing Page" # Used in the UI, ie.: "New Post"
-    folder: "site/content/landing-page" # The path to the folder where the documents are stored
+    folder: "site/content/landing-pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    identifier_field: slug
     fields: # The fields each document in this collection have
+      - {label: "Slug", name: "slug", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Header Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "landing-page-content-rich" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Content Rich Landing Page" # Used in the UI, ie.: "New Post"
+    folder: "site/content/landing-pages" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    identifier_field: slug
+    fields: # The fields each document in this collection have
+      - {label: "Slug", name: "slug", widget: "text"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Header Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
