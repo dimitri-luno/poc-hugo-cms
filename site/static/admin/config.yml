@@ -84,9 +84,11 @@ collections: # A list of collections the CMS should be able to edit
     label: "Simple Promo Landing Page" # Used in the UI, ie.: "New Post"
     folder: "site/content/landing-pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    filter: {field: "type", value: "simple-promo"}
     identifier_field: slug
     fields: # The fields each document in this collection have
       - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Type", name: "type", widget: "select", options: ["simple-promo", "larger-promo", "content-rich"], default: "simple-promo"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
@@ -96,9 +98,11 @@ collections: # A list of collections the CMS should be able to edit
     label: "Larger Promo Landing Page" # Used in the UI, ie.: "New Post"
     folder: "site/content/landing-pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    filter: {field: "type", value: "larger-promo"}
     identifier_field: slug
     fields: # The fields each document in this collection have
       - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Type", name: "type", widget: "select", options: ["simple-promo", "larger-promo", "content-rich"], default: "larger-promo"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
@@ -109,9 +113,11 @@ collections: # A list of collections the CMS should be able to edit
     label: "Content Rich Landing Page" # Used in the UI, ie.: "New Post"
     folder: "site/content/landing-pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    filter: {field: "type", value: "content-rich"}
     identifier_field: slug
     fields: # The fields each document in this collection have
       - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Type", name: "type", widget: "select", options: ["simple-promo", "larger-promo", "content-rich"], default: "content-rich"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
