@@ -86,7 +86,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     identifier_field: slug
     fields: # The fields each document in this collection have
-      - {label: "Slug", name: "slug", widget: "text"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -98,7 +98,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     identifier_field: slug
     fields: # The fields each document in this collection have
-      - {label: "Slug", name: "slug", widget: "text"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -111,7 +111,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     identifier_field: slug
     fields: # The fields each document in this collection have
-      - {label: "Slug", name: "slug", widget: "text"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
