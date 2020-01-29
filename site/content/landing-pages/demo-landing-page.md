@@ -1,5 +1,6 @@
 ---
 slug: demo-landing-page
+type: simple-promo
 date: 2020-01-29T14:28:47.863Z
 description: An example of the Simple Promo Landing Page template
 title: Simple Promo
