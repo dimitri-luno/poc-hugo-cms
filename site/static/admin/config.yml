@@ -88,7 +88,7 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: slug
     fields: # The fields each document in this collection have
       - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Type", name: "type", widget: "select", options: ["simple-promo", "larger-promo", "content-rich"], default: "simple-promo"}
+      - {label: "Type", name: "type", widget: "hidden", default: "simple-promo"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
@@ -102,7 +102,7 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: slug
     fields: # The fields each document in this collection have
       - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Type", name: "type", widget: "select", options: ["simple-promo", "larger-promo", "content-rich"], default: "larger-promo"}
+      - {label: "Type", name: "type", widget: "hidden", default: "larger-promo"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
@@ -117,7 +117,7 @@ collections: # A list of collections the CMS should be able to edit
     identifier_field: slug
     fields: # The fields each document in this collection have
       - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Type", name: "type", widget: "select", options: ["simple-promo", "larger-promo", "content-rich"], default: "content-rich"}
+      - {label: "Type", name: "type", widget: "hidden", default: "content-rich"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Title", name: "title", widget: "string"}
