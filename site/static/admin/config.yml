@@ -80,7 +80,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
-  - name: "landing-page" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "simple-promo_landing-page" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Simple Promo Landing Page" # Used in the UI, ie.: "New Post"
     folder: "site/content/landing-pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -94,7 +94,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Header Image", name: "image", widget: "image", required: false}
-  - name: "landing-page" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "larger-promo_landing-page" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Larger Promo Landing Page" # Used in the UI, ie.: "New Post"
     folder: "site/content/landing-pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -109,7 +109,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Subtitle", name: "subtitle", widget: "markdown"}
       - {label: "Header Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "landing-page" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "content-rich_landing-page" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Content Rich Landing Page" # Used in the UI, ie.: "New Post"
     folder: "site/content/landing-pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
